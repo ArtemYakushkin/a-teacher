@@ -1,0 +1,134 @@
+.header {
+    border-bottom: 1px solid var(--color-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: rgba(201, 201, 201, 0.4);
+    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.15),
+        inset 0px 0px 68px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.header-wrapp {
+    padding: 8px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 1px solid var(--color-light);
+}
+
+.header-logo {
+    width: 140px;
+    height: auto;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-item {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-accent);
+        transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.header-menu-btn {
+    display: none;
+}
+
+
+@media (max-width: 850px) {
+    .header-list {
+        display: none;
+    }
+
+    .header-menu-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-burger {
+        width: 30px;
+        height: 2px;
+        background-color: var(--color-dark);
+        position: relative;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background-color: var(--color-dark);
+            border-radius: 2px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &::before {
+            top: -6px;
+            left: 0;
+        }
+
+        &::after {
+            bottom: -6px;
+            right: 0;
+        }
+
+        &.open {
+            transform: rotate(-45deg);
+        }
+
+        &.open::before {
+            transform: rotate(90deg);
+            top: -7px;
+            left: 7px;
+        }
+
+        &.open::after {
+            transform: rotate(90deg);
+            top: 7px;
+            left: 7px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-wrapp {
+        padding: 8px 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .header-wrapp {
+        padding: 8px 20px;
+    }
+
+    .header-logo {
+        width: 100px;
+    }
+}

@@ -1,0 +1,113 @@
+.lessons-item {
+    display: flex;
+    gap: 40px;
+    padding: 24px 24px 24px 40px;
+    border-top: 1px solid var(--color-light);
+    border-right: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #34495e4a;
+    backdrop-filter: blur(10px);
+}
+
+.lessons-poster {
+	display: block;
+	flex-shrink: 0;
+	position: relative;
+	width: 300px;
+	height: 210px;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.3s;
+	margin-bottom: 24px;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.lessons-overlay {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.233);
+}
+
+.lessons-icon {
+	color: white;
+	width: 48px;
+	height: 48px;
+	opacity: 0.9;
+}
+
+.lessons-btn-box {
+	display: flex;
+	justify-content: center;
+}
+
+.lessons-button {
+	width: 205px;
+    height: 50px;
+    background-color: var(--color-accent);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--color-light);
+	transition: transform 0.3s;
+}
+
+.lessons-button:hover {
+	transform: scale(1.02);
+}
+
+.lessons-title {
+	font-weight: 800;
+    font-size: clamp(28px, 2.812vw, 36px);
+    line-height: 29px;
+    margin-bottom: 24px;
+}
+
+.lessons-text {
+    font-weight: 500;
+    font-size: clamp(16px, 1.562vw, 20px);
+    line-height: 28px;
+	margin-bottom: 24px;
+}
+
+.lessons-link {
+	font-weight: 500;
+    font-size: clamp(16px, 1.562vw, 20px);
+    line-height: 28px;
+	color: var(--color-blue);
+	text-decoration: underline;
+}
+
+.lessons-subtext {
+	font-weight: 500;
+    font-size: clamp(12px, 1.562vw, 14px);
+    line-height: 20px;
+	margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .lessons-item {
+        padding: 24px 24px 24px 20px;
+		flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

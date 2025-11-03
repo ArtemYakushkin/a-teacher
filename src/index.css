@@ -1,0 +1,209 @@
+/* 100 — Thin (Тонкий) 
+200 — Extra Light (Очень светлый) 
+300 — Light (Светлый) 
+400 — Regular / Normal (Обычный)
+500 — Medium (Средний) 
+600 — SemiBold (Полужирный) 
+700 — Bold (Жирный) 
+800 — ExtraBold (Очень жирный) 
+900 — Black (Чёрный, экстражирный) */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+@import './styles/header.css';
+@import './styles/hero.css';
+@import './styles/mobileMenu.css';
+@import './styles/about.css';
+@import './styles/services.css';
+@import './styles/reviews.css';
+@import './styles/footer.css';
+@import './styles/blog.css';
+@import './styles/lessons.css';
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-light: #E1E2E1;
+    --color-grey: #34495E;
+    --color-blue: #1B3B6F;
+    --color-dark: #0D1B2A;
+    --color-accent: #9000d1;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background: linear-gradient(90deg,
+            rgba(225, 226, 225, 1) 33%,
+            rgba(52, 73, 94, 0.6) 58%,
+            rgba(27, 59, 111, 0.77) 87%,
+            rgba(13, 27, 42, 0.89) 100%);
+    color: var(--color-dark);
+    overflow-x: hidden;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 5px;
+    }
+}
+
+.section {
+    border-bottom: 1px solid var(--color-light);
+    margin-top: 60px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px 0;
+}
+
+@media (max-width: 695px) {
+    .section {
+        margin-top: 58px;
+    }
+
+    .list {
+        padding: 24px 0;
+    }
+}
+
+.modal-overlay {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	padding: 20px;
+	overflow: auto;
+}
+
+.modal-content {
+	position: relative;
+	background-color: var(--color-grey);
+	border-radius: 16px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	max-width: 90vw;
+	max-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-close {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	background: rgba(255, 255, 255, 0.15);
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	transition: background 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-close:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.close-icon {
+	color: white;
+	width: 24px;
+	height: 24px;
+}
+
+.modal-video {
+	border-radius: 16px;
+    overflow: hidden;
+
+    video {
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: cover;  
+    }
+}
+
+.modal-image {
+	border-radius: 16px;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: contain;    
+    }
+}

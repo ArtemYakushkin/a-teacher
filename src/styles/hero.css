@@ -1,0 +1,261 @@
+.hero-section {
+    margin-top: 60px;
+    background-image: url(../assets/main-gradient.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.hero-wrapp {
+    padding-left: 40px;
+    border-left: 1px solid var(--color-light);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 509px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.hero-title {
+    position: relative;
+    font-weight: 900;
+    font-size: clamp(36px, 5.625vw, 72px);
+    letter-spacing: -4px;
+    line-height: 78px;
+    color: var(--color-blue);
+}
+
+.hero-span {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.hero-text {
+    font-weight: 600;
+    font-size: clamp(16px, 1.875vw, 24px);
+    letter-spacing: -1px;
+    line-height: 37px;
+    color: var(--color-blue);
+}
+
+.hero-btn {
+    margin-top: 40px;
+    width: fit-content;
+    padding: 20px 24px;
+    background-color: var(--color-accent);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: clamp(16px, 1.875vw, 24px);
+    line-height: 37px;
+    color: var(--color-light);
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.hero-img-box {
+    position: relative;
+    flex-shrink: 0;
+    max-width: 650px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-cards {
+    position: absolute;
+    bottom: 100px;
+    right: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-card {
+    max-width: 345px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid var(--color-light);
+}
+
+.hero-advantage {
+    font-weight: 800;
+    font-size: clamp(20px, 3.125vw, 40px);
+    line-height: 37px;
+    color: var(--color-accent);
+}
+
+.hero-description {
+    font-weight: 600;
+    font-size: clamp(12px, 1.875vw, 24px);
+    line-height: 30px;
+}
+
+
+@media (max-width: 1210px) {
+    .hero-content {
+        gap: 24px;
+        margin-top: 60px;
+    }
+
+    .hero-img-box {
+        max-width: 550px;
+    }
+
+    .hero-cards {
+        bottom: 40px;
+    }
+
+    .hero-card {
+        max-width: 300px;
+        padding: 10px 14px;
+        gap: 24px;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    .hero-text {
+        line-height: 30px;
+    }
+
+    .hero-btn {
+        margin-top: 32px;
+    }
+
+    .hero-img-box {
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 970px) {
+    .hero-content {
+        max-width: 350px;
+    }
+
+    .hero-title {
+        line-height: 48px;
+    }
+
+    .hero-text {
+        line-height: 20px;
+    }
+
+    .hero-btn {
+        padding: 12px 20px;
+        line-height: 37px;
+    }
+
+    .hero-img-box {
+        max-width: 430px;
+    }
+
+    .hero-cards {
+        bottom: 30px;
+        right: -6px;
+        gap: 10px;
+    }
+
+    .hero-card {
+        max-width: 220px;
+        padding: 6px 10px;
+        gap: 16px;
+    }
+}
+
+
+@media (max-width: 855px) {
+    .hero-content {
+        max-width: 350px;
+    }
+
+    .hero-img-box {
+        max-width: 350px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        background-position: right top;
+    }
+
+    .hero-wrapp {
+        padding: 8px 20px;
+    }
+
+    .hero-btn {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 695px) {
+    .hero-section {
+        background-position: center top;
+        background-size: cover;
+        margin-top: 58px;
+    }
+
+    .hero-wrapp {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-content {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .hero-title {
+        line-height: 45px;
+        letter-spacing: -2px;
+        text-align: center;
+    }
+
+    .hero-text {
+        line-height: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-btn {
+        text-align: center;
+    }
+
+    .hero-card {
+        border-radius: 14px;
+        padding: 4px 6px;
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .hero-section {
+        background-position: left top;
+        margin-top: 47px;
+    }
+}
