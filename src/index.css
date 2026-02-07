@@ -1,11 +1,11 @@
-/* 100 — Thin (Тонкий) 
-200 — Extra Light (Очень светлый) 
-300 — Light (Светлый) 
+/* 100 — Thin (Тонкий)
+200 — Extra Light (Очень светлый)
+300 — Light (Светлый)
 400 — Regular / Normal (Обычный)
-500 — Medium (Средний) 
-600 — SemiBold (Полужирный) 
-700 — Bold (Жирный) 
-800 — ExtraBold (Очень жирный) 
+500 — Medium (Средний)
+600 — SemiBold (Полужирный)
+700 — Bold (Жирный)
+800 — ExtraBold (Очень жирный)
 900 — Black (Чёрный, экстражирный) */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
@@ -19,44 +19,48 @@
 @import './styles/footer.css';
 @import './styles/blog.css';
 @import './styles/lessons.css';
+@import './styles/modal.css';
 
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 :root {
-    --color-light: #E1E2E1;
-    --color-grey: #34495E;
-    --color-blue: #1B3B6F;
-    --color-dark: #0D1B2A;
-    --color-accent: #9000d1;
+	--color-light: #e1e2e1;
+	--color-grey: #34495e;
+	--color-blue: #1b3b6f;
+	--color-dark: #0d1b2a;
+	--color-accent: #9000d1;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    background: linear-gradient(90deg,
-            rgba(225, 226, 225, 1) 33%,
-            rgba(52, 73, 94, 0.6) 58%,
-            rgba(27, 59, 111, 0.77) 87%,
-            rgba(13, 27, 42, 0.89) 100%);
-    color: var(--color-dark);
-    overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	/* background: linear-gradient(
+		90deg,
+		rgba(225, 226, 225, 1) 33%,
+		rgba(52, 73, 94, 0.6) 58%,
+		rgba(27, 59, 111, 0.77) 87%,
+		rgb(108, 52, 131) 100%
+	); */
+	background: #ffffff;
+	color: var(--color-dark);
+	overflow-x: hidden;
 }
 
 ul,
 li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 h1,
@@ -66,74 +70,74 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 button {
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    color: inherit;
-    font-family: "Montserrat", sans-serif;
+	border: none;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	color: inherit;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 input,
 textarea {
-    outline: none;
-    border: none;
-    font-family: inherit;
+	outline: none;
+	border: none;
+	font-family: inherit;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 .container {
-    max-width: 1280px;
-    padding: 0 40px;
-    margin: 0 auto;
+	max-width: 1280px;
+	padding: 0 40px;
+	margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
+	.container {
+		padding: 0 20px;
+	}
 }
 
 @media (max-width: 425px) {
-    .container {
-        padding: 0 5px;
-    }
+	.container {
+		padding: 0 5px;
+	}
 }
 
 .section {
-    border-bottom: 1px solid var(--color-light);
-    margin-top: 60px;
+	border-bottom: 1px solid var(--color-light);
+	margin-top: 60px;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 48px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 48px 0;
 }
 
 @media (max-width: 695px) {
-    .section {
-        margin-top: 58px;
-    }
+	.section {
+		margin-top: 58px;
+	}
 
-    .list {
-        padding: 24px 0;
-    }
+	.list {
+		padding: 24px 0;
+	}
 }
 
 .modal-overlay {
@@ -188,22 +192,22 @@ img {
 
 .modal-video {
 	border-radius: 16px;
-    overflow: hidden;
+	overflow: hidden;
 
-    video {
-        max-width: 100%;
-        max-height: 80vh;
-        object-fit: cover;  
-    }
+	video {
+		max-width: 100%;
+		max-height: 80vh;
+		object-fit: cover;
+	}
 }
 
 .modal-image {
 	border-radius: 16px;
-    overflow: hidden;
+	overflow: hidden;
 
-    img {
-        max-width: 100%;
-        max-height: 80vh;
-        object-fit: contain;    
-    }
+	img {
+		max-width: 100%;
+		max-height: 80vh;
+		object-fit: contain;
+	}
 }
