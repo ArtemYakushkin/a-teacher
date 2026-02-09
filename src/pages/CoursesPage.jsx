@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../firebase/firebase';
 
@@ -37,24 +38,19 @@ const CoursesPage = () => {
 	}
 
 	return (
-		<div className="lessons-list" style={{ marginTop: '200px' }}>
-			{lessons.map((lesson) => (
-				<div className="lesson-card" key={lesson.id}>
-					<img src={lesson.image} alt={lesson.title} />
-					<img src={lesson.vocabulare} alt={lesson.title} />
-
-					<h3>{lesson.title}</h3>
-					<p>{lesson.description}</p>
-
-					<a href={lesson.video} target="_blank" rel="noreferrer">
-						Переглянути відео
-					</a>
-					<a href={lesson.game} target="_blank" rel="noreferrer">
-						Грати
-					</a>
+		<section className="section">
+			<div className="container">
+				<div className="courses-list">
+					{lessons.map((lesson) => (
+						<Link to={`/courses/${lesson.id}`} key={lesson.id}>
+							<div className="courses-card">
+								<img src={lesson.image} alt={lesson.title} />
+							</div>
+						</Link>
+					))}
 				</div>
-			))}
-		</div>
+			</div>
+		</section>
 	);
 };
 

@@ -1,0 +1,148 @@
+.courses-list {
+	padding: 48px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.courses-card {
+	border-radius: 20px;
+	background-color: var(--color-light-grey);
+	padding: 8px;
+	overflow: hidden;
+	cursor: pointer;
+
+	img {
+		border-radius: 12px;
+	}
+}
+
+.courses-wrap {
+	margin: 108px 0 48px 0;
+	padding: 20px;
+	background-color: var(--color-light-grey);
+	border-radius: 30px;
+}
+
+.courses-info {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 48px;
+}
+
+.courses-poster {
+	display: block;
+	flex-shrink: 0;
+	position: relative;
+	width: 50%;
+	height: auto;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.3s;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.courses-overlay {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.233);
+}
+
+.courses-icon {
+	color: var(--color-light);
+	width: 72px;
+	height: 72px;
+}
+
+.courses-content {
+	padding: 48px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.courses-title {
+	font-weight: 800;
+	font-size: clamp(28px, 2.812vw, 36px);
+	line-height: 29px;
+	color: var(--color-blue);
+}
+
+.courses-text {
+	font-weight: 500;
+	font-size: clamp(16px, 1.562vw, 20px);
+	line-height: 28px;
+	color: var(--color-blue);
+}
+
+.courses-game {
+	font-weight: 500;
+	font-size: clamp(16px, 1.562vw, 20px);
+	line-height: 28px;
+	color: var(--color-blue);
+	text-decoration: underline;
+}
+
+.courses-dictionary {
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+	.courses-content {
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.courses-list {
+		padding: 24px 0;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+
+	.courses-wrap {
+		margin: 84px 0 24px 0;
+	}
+
+	.courses-info {
+		flex-direction: column-reverse;
+		gap: 20px;
+		margin-bottom: 24px;
+	}
+
+	.courses-poster {
+		width: 100%;
+	}
+
+	.courses-content {
+		padding: 0;
+		gap: 24px;
+	}
+}
+
+@media (max-width: 500px) {
+	.courses-list {
+		padding: 24px 0;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 16px;
+	}
+
+	.courses-wrap {
+		margin: 72px 0 24px 0;
+		padding: 24px 8px 8px 8px;
+	}
+
+	.courses-content {
+		padding: 0 12px;
+	}
+}

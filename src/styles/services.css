@@ -1,19 +1,18 @@
 .services-section {
-	border-bottom: 1px solid var(--color-light);
-	background-color: var(--color-grey);
 	scroll-margin-top: 60px;
 }
 
 .services-wrapp {
 	padding: 50px 40px;
-	border-left: 1px solid var(--color-light);
+	background-color: var(--color-light-grey);
+	border-radius: 30px;
 }
 
 .services-title {
 	font-weight: 800;
 	font-size: 36px;
 	line-height: 29px;
-	color: var(--color-light);
+	color: var(--color-blue);
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -34,8 +33,7 @@
 	padding: 15px 15px 60px 15px;
 	display: flex;
 	flex-direction: column;
-	background: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(10px);
+	background: var(--color-light);
 }
 
 .services-title-box {
@@ -53,14 +51,14 @@
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 29px;
-	color: var(--color-light);
+	color: var(--color-blue);
 }
 
 .services-subtitle {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 19px;
-	color: var(--color-light);
+	color: var(--color-blue);
 	margin-bottom: 22px;
 	text-align: center;
 }
@@ -88,7 +86,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 19px;
-	color: var(--color-light);
+	color: var(--color-blue);
 }
 
 .services-price {
@@ -113,13 +111,13 @@
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 19px;
-	color: var(--color-light);
+	color: var(--color-blue);
 }
 
 .services-price-note {
 	font-weight: 400;
 	font-size: 13px;
-	color: var(--color-light);
+	color: var(--color-blue);
 }
 
 .services-btn-box {
@@ -128,7 +126,7 @@
 	right: 0;
 	width: 210px;
 	height: 55px;
-	background-color: var(--color-grey);
+	background-color: var(--color-light-grey);
 	border-top-left-radius: 27px;
 
 	&::after {
@@ -139,7 +137,7 @@
 		width: 10px;
 		height: 10px;
 		border-bottom-right-radius: 10px;
-		box-shadow: 0.313rem 0.313rem 0 0.313rem var(--color-grey);
+		box-shadow: 0.313rem 0.313rem 0 0.313rem var(--color-light-grey);
 	}
 
 	&::before {
@@ -150,7 +148,7 @@
 		width: 10px;
 		height: 10px;
 		border-bottom-right-radius: 10px;
-		box-shadow: 0.313rem 0.313rem 0 0.313rem var(--color-grey);
+		box-shadow: 0.313rem 0.313rem 0 0.313rem var(--color-light-grey);
 	}
 }
 

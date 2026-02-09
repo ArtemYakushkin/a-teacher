@@ -1,14 +1,9 @@
 .lessons-item {
-    display: flex;
-    gap: 40px;
-    padding: 24px 24px 24px 40px;
-    border-top: 1px solid var(--color-light);
-    border-right: 1px solid var(--color-light);
-    border-bottom: 1px solid var(--color-light);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background: #34495e4a;
-    backdrop-filter: blur(10px);
+	display: flex;
+	gap: 40px;
+	padding: 24px 24px 24px 40px;
+	border-radius: 20px;
+	background-color: var(--color-light-grey);
 }
 
 .lessons-poster {
@@ -57,16 +52,16 @@
 
 .lessons-button {
 	width: 205px;
-    height: 50px;
-    background-color: var(--color-accent);
-    border-radius: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    color: var(--color-light);
+	height: 50px;
+	background-color: var(--color-accent);
+	border-radius: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	color: var(--color-light);
 	transition: transform 0.3s;
 }
 
@@ -76,38 +71,41 @@
 
 .lessons-title {
 	font-weight: 800;
-    font-size: clamp(28px, 2.812vw, 36px);
-    line-height: 29px;
-    margin-bottom: 24px;
+	font-size: clamp(28px, 2.812vw, 36px);
+	line-height: 29px;
+	color: var(--color-blue);
+	margin-bottom: 24px;
 }
 
 .lessons-text {
-    font-weight: 500;
-    font-size: clamp(16px, 1.562vw, 20px);
-    line-height: 28px;
+	font-weight: 500;
+	font-size: clamp(16px, 1.562vw, 20px);
+	line-height: 28px;
+	color: var(--color-blue);
 	margin-bottom: 24px;
 }
 
 .lessons-link {
 	font-weight: 500;
-    font-size: clamp(16px, 1.562vw, 20px);
-    line-height: 28px;
+	font-size: clamp(16px, 1.562vw, 20px);
+	line-height: 28px;
 	color: var(--color-blue);
 	text-decoration: underline;
 }
 
 .lessons-subtext {
 	font-weight: 500;
-    font-size: clamp(12px, 1.562vw, 14px);
-    line-height: 20px;
+	font-size: clamp(12px, 1.562vw, 14px);
+	line-height: 20px;
+	color: var(--color-blue);
 	margin-top: 24px;
 }
 
 @media (max-width: 768px) {
-    .lessons-item {
-        padding: 24px 24px 24px 20px;
+	.lessons-item {
+		padding: 24px 24px 24px 20px;
 		flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+		align-items: center;
+		gap: 20px;
+	}
 }

@@ -1,131 +1,122 @@
 .about-section {
-    border-bottom: 1px solid var(--color-light);
-    margin-top: 60px;
-    scroll-margin-top: 60px;
+	margin-top: 60px;
+	scroll-margin-top: 60px;
 }
 
 .about-wrapp {
-    padding: 50px 0px 50px 0;
-    border-left: 1px solid var(--color-light);
+	padding: 50px 0px 50px 0;
 }
 
 .about-content {
-    border-top: 1px solid var(--color-light);
-    border-right: 1px solid var(--color-light);
-    border-bottom: 1px solid var(--color-light);
-    border-top-right-radius: 60px;
-    border-bottom-right-radius: 60px;
-    padding: 35px 40px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+	border-radius: 30px;
+	background-color: var(--color-light-grey);
+	padding: 35px 40px;
+	display: flex;
+	align-items: center;
+	gap: 40px;
 }
 
 .about-img-box {
-    width: 337px;
-    height: 505px;
-    border-radius: 30px;
-    overflow: hidden;
-    flex-shrink: 0;
+	width: 337px;
+	height: 505px;
+	border-radius: 30px;
+	overflow: hidden;
+	flex-shrink: 0;
 }
 
 .about-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .about-text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 743px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 743px;
 }
 
 .about-text {
-    font-weight: 500;
-    font-size: clamp(16px, 1.562vw, 20px);
-    line-height: 28px;
+	font-weight: 500;
+	font-size: clamp(16px, 1.562vw, 20px);
+	line-height: 28px;
+	color: var(--color-blue);
 }
 
 .about-btn-more {
-    align-self: flex-end;
-    background-color: transparent;
-    color: var(--color-blue);
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    text-decoration: underline;
+	align-self: flex-end;
+	background-color: transparent;
+	color: var(--color-blue);
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	text-decoration: underline;
 }
-
 
 @media (max-width: 1100px) {
-    .about-content {
-        flex-direction: column;
-    }
+	.about-content {
+		flex-direction: column;
+	}
 
-    .about-img-box {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-    }
+	.about-img-box {
+		width: 350px;
+		height: 350px;
+		border-radius: 50%;
+	}
 
-    .about-img {
-        object-position: top;
-    }
+	.about-img {
+		object-position: top;
+	}
 
-    .about-text-box {
-        width: 100%;
-    }
+	.about-text-box {
+		width: 100%;
+	}
 
-    .about-text {
-        text-align: center;
-    }
+	.about-text {
+		text-align: center;
+	}
 
-    .about-btn-more {
-        align-self: center;
-    }
+	.about-btn-more {
+		align-self: center;
+	}
 }
-
 
 @media (max-width: 768px) {
-    .about-wrapp {
-        padding: 20px 0px 20px 0;
-    }
+	.about-wrapp {
+		padding: 20px 0px 20px 0;
+	}
 
-    .about-content {
-        padding: 20px;
-    }
+	.about-content {
+		padding: 20px;
+	}
 }
-
 
 @media (max-width: 695px) {
-    .about-section {
-        margin-top: 58px;
-    }
+	.about-section {
+		margin-top: 58px;
+	}
 }
-
 
 @media (max-width: 550px) {
-    .about-img-box {
-        width: 250px;
-        height: 250px;
-    }
+	.about-img-box {
+		width: 250px;
+		height: 250px;
+	}
 
-    .about-text {
-        text-align: start;
-    }
+	.about-text {
+		text-align: start;
+	}
 }
 
-
 @media (max-width: 425px) {
-    .about-section {
-        scroll-margin-top: 47px;
-        margin-top: 47px;
-    }
+	.about-section {
+		scroll-margin-top: 47px;
+		margin-top: 47px;
+	}
 
-    .about-wrapp {
-        padding: 20px 0px 20px 0;
-    }
+	.about-wrapp {
+		padding: 20px 0px 20px 0;
+	}
 }

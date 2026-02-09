@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';
 import LessonsPage from './pages/LessonsPage';
 import CoursesPage from './pages/CoursesPage';
+import CourseDetPage from './pages/CourseDetPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AuthModal from './components/AuthModal';
@@ -26,6 +27,10 @@ const App = () => {
 						<Route path="/blog" element={<BlogPage />} />
 						<Route path="/lessons" element={<LessonsPage />} />
 						<Route path="/courses" element={<CoursesPage />} />
+						<Route
+							path="/courses/:lessonId"
+							element={<CourseDetPage />}
+						/>
 					</Routes>
 
 					<Footer />

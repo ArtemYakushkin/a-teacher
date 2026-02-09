@@ -9,6 +9,7 @@
 900 — Black (Чёрный, экстражирный) */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 @import './styles/header.css';
 @import './styles/hero.css';
@@ -19,6 +20,7 @@
 @import './styles/footer.css';
 @import './styles/blog.css';
 @import './styles/lessons.css';
+@import './styles/courses.css';
 @import './styles/modal.css';
 
 *,
@@ -34,7 +36,8 @@ html {
 }
 
 :root {
-	--color-light: #e1e2e1;
+	--color-light: #ffffff;
+	--color-light-grey: #dddddd;
 	--color-grey: #34495e;
 	--color-blue: #1b3b6f;
 	--color-dark: #0d1b2a;
@@ -42,15 +45,8 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'SN Pro', sans-serif;
 	font-size: 16px;
-	/* background: linear-gradient(
-		90deg,
-		rgba(225, 226, 225, 1) 33%,
-		rgba(52, 73, 94, 0.6) 58%,
-		rgba(27, 59, 111, 0.77) 87%,
-		rgb(108, 52, 131) 100%
-	); */
 	background: #ffffff;
 	color: var(--color-dark);
 	overflow-x: hidden;
@@ -119,14 +115,13 @@ img {
 }
 
 .section {
-	border-bottom: 1px solid var(--color-light);
 	margin-top: 60px;
 }
 
 .list {
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
+	gap: 30px;
 	padding: 48px 0;
 }
 
