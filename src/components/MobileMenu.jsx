@@ -38,9 +38,9 @@ const MobileMenu = ({ isOpen, closeMenu }) => {
 				Уроки
 			</Link>
 
-			{/* <Link className="menu-item" to={'/courses'} onClick={closeMenu}>
+			<Link className="menu-item" to={'/courses'} onClick={closeMenu}>
 				Курси
-			</Link> */}
+			</Link>
 		</div>
 	);
 };

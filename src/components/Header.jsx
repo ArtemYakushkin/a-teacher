@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../firebase/AuthContext';
-// import { useAuthModal } from '../firebase/AuthModalContext';
+import { useAuthModal } from '../firebase/AuthModalContext';
 
 import MobileMenu from './MobileMenu';
 import LogoutModal from './LogoutModal';
@@ -11,7 +11,7 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [logoutOpen, setLogoutOpen] = useState(false);
 	const { user, logout } = useAuth();
-	// const { setIsOpen } = useAuthModal();
+	const { setIsOpen } = useAuthModal();
 	const navigate = useNavigate();
 
 	const handleScrollToServices = (e) => {
@@ -24,13 +24,13 @@ const Header = () => {
 		}
 	};
 
-	// const handleCoursesClick = () => {
-	// 	if (!user) {
-	// 		setIsOpen(true);
-	// 	} else {
-	// 		navigate('/courses');
-	// 	}
-	// };
+	const handleCoursesClick = () => {
+		if (!user) {
+			setIsOpen(true);
+		} else {
+			navigate('/courses');
+		}
+	};
 
 	const handleLogoutConfirm = async () => {
 		await logout();
@@ -70,14 +70,14 @@ const Header = () => {
 								<li className="header-item">
 									<Link to={'/lessons'}>Уроки</Link>
 								</li>
-								{/* <li className="header-item">
+								<li className="header-item">
 									<button
 										onClick={handleCoursesClick}
 										style={{ fontWeight: 700 }}
 									>
 										Курси
 									</button>
-								</li> */}
+								</li>
 							</ul>
 
 							{user && (

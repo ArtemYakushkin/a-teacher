@@ -1,0 +1,33 @@
+.tabs {
+	display: flex;
+	border-bottom: 1px solid var(--color-light-grey);
+	padding-bottom: 8px;
+	margin-top: 108px;
+	margin-bottom: 24px;
+}
+
+.tabs button {
+	padding: 12px 24px;
+	border-radius: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: clamp(12px, 1.875vw, 16px);
+	line-height: 20px;
+	color: var(--color-blue);
+}
+
+.tabs button.active {
+	background: var(--color-light-grey);
+}
+
+@media (max-width: 768px) {
+	.tabs {
+		margin-top: 84px;
+	}
+
+	.tabs button {
+		padding: 8px 20px;
+	}
+}

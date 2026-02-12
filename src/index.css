@@ -22,6 +22,7 @@
 @import './styles/lessons.css';
 @import './styles/courses.css';
 @import './styles/modal.css';
+@import './styles/tabs.css';
 
 *,
 ::after,

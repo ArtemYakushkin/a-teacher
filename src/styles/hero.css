@@ -7,8 +7,6 @@
 }
 
 .hero-wrapp {
-	/* padding-left: 40px; */
-	/* border-left: 1px solid var(--color-light-grey); */
 	display: flex;
 	justify-content: space-between;
 }
