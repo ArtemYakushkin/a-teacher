@@ -17,13 +17,15 @@ exports.handler = async (event) => {
 	const { orderReference, transactionStatus } = data;
 	const merchantSecret = process.env.WFP_MERCHANT_SECRET;
 
+	console.log(data);
+
 	// Проверка подписи (упрощенно для примера, в проде сверяй все поля)
 	if (transactionStatus === 'Approved') {
 		// Извлекаем userId из orderReference (он там зашит после ORDER_)
 		const userId = orderReference.split('_')[1];
 
 		// Обновляем доступ в Firebase
-		await db.collection('users').doc(userId).update({ hasAccess: true });
+		await db.collection('users').doc(userId).update({ hasCourseABC: true });
 	}
 
 	// Ответ для WayForPay (обязательно!)

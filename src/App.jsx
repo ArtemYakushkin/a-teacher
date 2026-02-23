@@ -8,6 +8,8 @@ import CoursesPage from './pages/CoursesPage';
 import CourseDetPage from './pages/CourseDetPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 import AuthModal from './components/AuthModal';
 
 import { AuthProvider } from './firebase/AuthContext';
@@ -31,6 +33,8 @@ const App = () => {
 							path="/courses/:lessonId"
 							element={<CourseDetPage />}
 						/>
+						<Route path="/terms" element={<Terms />} />
+						<Route path="/privacy" element={<Privacy />} />
 					</Routes>
 
 					<Footer />

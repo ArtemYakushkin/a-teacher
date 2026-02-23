@@ -6,7 +6,7 @@ import { useAuth } from '../firebase/AuthContext';
 
 import { FaLock } from 'react-icons/fa';
 
-const Wayforpay = window.Wayforpay;
+// const Wayforpay = window.Wayforpay;
 
 const CourseABC = () => {
 	const [lessons, setLessons] = useState([]);
@@ -57,11 +57,17 @@ const CourseABC = () => {
 		});
 		const paymentConfig = await res.json();
 
-		const wayforpay = new Wayforpay();
+		const wayforpay = new window.Wayforpay();
 		wayforpay.run(
 			paymentConfig,
-			(res) => alert('Оплачено! Доступ откроется через минуту.'),
-			(err) => alert('Ошибка или отказ'),
+			function (response) {
+				console.log('Успех', response);
+				alert('Оплата прошла!');
+			},
+			function (response) {
+				console.log('Ошибка', response);
+				alert('Ошибка: ' + response.reasonCode);
+			},
 		);
 	};
 

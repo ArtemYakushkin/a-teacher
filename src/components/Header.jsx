@@ -44,11 +44,7 @@ const Header = () => {
 				<div className="container">
 					<div className="header-wrapp">
 						<Link to={'/'}>
-							<img
-								className="header-logo"
-								src={Logo}
-								alt="logo"
-							/>
+							<img className="logo" src={Logo} alt="logo" />
 						</Link>
 
 						<div className="header-actions">
