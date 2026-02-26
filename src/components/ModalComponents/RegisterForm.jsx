@@ -11,7 +11,7 @@ import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { auth, db } from '../../firebase/firebase';
 import { useAuthModal } from '../../firebase/AuthModalContext';
 
-const RegisterForm = ({ activeView }) => {
+const RegisterForm = ({ activeView, onToggle }) => {
 	const [nickname, setNickname] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
@@ -115,6 +115,10 @@ const RegisterForm = ({ activeView }) => {
 			<button className="google" onClick={handleGoogleRegister}>
 				Ввійти через Google
 			</button>
+
+			<p className="link" onClick={onToggle}>
+				Авторизуватися
+			</p>
 		</div>
 	);
 };

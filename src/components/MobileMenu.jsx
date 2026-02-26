@@ -1,7 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom';
 
+import { useAuth } from '../firebase/AuthContext';
+import { useAuthModal } from '../firebase/AuthModalContext';
+
 const MobileMenu = ({ isOpen, closeMenu }) => {
+	const { user } = useAuth();
 	const navigate = useNavigate();
+	const { setIsOpen } = useAuthModal();
 
 	const handleScrollToServices = (e) => {
 		e.preventDefault();
@@ -10,6 +15,14 @@ const MobileMenu = ({ isOpen, closeMenu }) => {
 			section?.scrollIntoView({ behavior: 'smooth' });
 		} else {
 			navigate('/#services');
+		}
+	};
+
+	const handleCoursesClick = () => {
+		if (!user) {
+			setIsOpen(true);
+		} else {
+			navigate('/courses');
 		}
 	};
 
@@ -38,9 +51,15 @@ const MobileMenu = ({ isOpen, closeMenu }) => {
 				Уроки
 			</Link>
 
-			<Link className="menu-item" to={'/courses'} onClick={closeMenu}>
+			<button
+				className="menu-item"
+				onClick={() => {
+					handleCoursesClick();
+					closeMenu();
+				}}
+			>
 				Курси
-			</Link>
+			</button>
 		</div>
 	);
 };

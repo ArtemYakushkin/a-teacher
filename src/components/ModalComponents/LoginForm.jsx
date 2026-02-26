@@ -10,7 +10,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { useAuthModal } from '../../firebase/AuthModalContext';
 import { auth, db } from '../../firebase/firebase';
 
-const LoginForm = ({ activeView }) => {
+const LoginForm = ({ activeView, onToggle }) => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState('');
@@ -106,6 +106,10 @@ const LoginForm = ({ activeView }) => {
 			<button className="google" onClick={handleGoogleLogin}>
 				Ввійти через Google
 			</button>
+
+			<p className="link" onClick={onToggle}>
+				Зареєструватися
+			</p>
 		</div>
 	);
 };
