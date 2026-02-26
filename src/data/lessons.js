@@ -17,7 +17,7 @@ export const lessonsData = [
 			"Коли закінчите перегляд відео — надішліть фото в Instagram з ім'ям дитини англійською з тегом #EnglishTodayWithAnna і напишіть слово 'START'.",
 		img: Img0,
 		link: 'https://wordwall.net/resource/90887945',
-		linkText: 'Посилання на гру',
+		linkText: 'Гра',
 	},
 
 	{
@@ -30,7 +30,7 @@ export const lessonsData = [
 			"Коли закінчите поробку — надішліть фото/відео в Instagram Вашої поробки з тегом #EnglishTodayWithAnna і напишіть слово 'hedgehog'.",
 		img: Img1,
 		link: 'https://drive.google.com/file/d/19n_nvvaWoFcm1sagyJjX6-BtNoIqmhta/view?usp=drive_link',
-		linkText: 'Посилання на пісню',
+		linkText: 'Пісня',
 	},
 
 	{
@@ -43,6 +43,6 @@ export const lessonsData = [
 			'Коли закінчите перегляд відео — надішліть зтмове фото в Instagram з тегом #EnglishTodayWithAnna і напишіть слово "Winter".',
 		img: Img2,
 		link: 'https://www.youtube.com/watch?v=r6oYSuosMfQ',
-		linkText: 'Посилання на мультфільм',
+		linkText: 'Мультфільм',
 	},
 ];
