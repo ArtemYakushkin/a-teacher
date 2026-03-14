@@ -1,10 +1,12 @@
 import Img0 from '../assets/lessons/ABC-Lesson-0.png';
 import Img1 from '../assets/lessons/Lesson-4.1.png';
 import Img2 from '../assets/lessons/Lesson-18.png';
+import Img3 from '../assets/lessons/Lesson Весна.png';
 
 import Poster0 from '../assets/lessons/Lesson0.jpg';
 import Poster1 from '../assets/lessons/Lesson1.jpg';
 import Poster2 from '../assets/lessons/Lesson2.jpg';
+import Poster3 from '../assets/lessons/Lesson4.jpg';
 
 export const lessonsData = [
 	{
@@ -22,15 +24,14 @@ export const lessonsData = [
 
 	{
 		id: 2,
-		linkVideo: 'https://youtu.be/ZZ19_19eOR8',
-		posterImg: Poster1,
-		title: 'Осінь',
-		text: 'В цьому відео Анна читає книгу, вітається з дітьми і каже, що зараз осінь. Анна дуже любить робити поробки, то осінь надихнула на створення цікавої поробки. Готові спробувати?  Після відео — простий майстер-клас, який можна повторити вдома.',
-		subText:
-			"Коли закінчите поробку — надішліть фото/відео в Instagram Вашої поробки з тегом #EnglishTodayWithAnna і напишіть слово 'hedgehog'.",
-		img: Img1,
-		link: 'https://drive.google.com/file/d/19n_nvvaWoFcm1sagyJjX6-BtNoIqmhta/view?usp=drive_link',
-		linkText: 'Пісня',
+		linkVideo: 'https://youtu.be/xPVLd2U6XmA',
+		posterImg: Poster3,
+		title: 'Весна',
+		text: 'В цьому відео вчитель Анна вітається з дітьми, представляє свого друга, питає як справи і діти починають обговорювати весняні слова.  Яке Ваше улюблене весняне слово? Давайте подивимось!',
+		subText: '',
+		img: Img3,
+		link: 'https://drive.google.com/file/d/1sO9RGM-QBUcs5vRdf2ZkSvwAO_nAv4mX/view',
+		linkText: 'Розмальовка',
 	},
 
 	{
@@ -44,5 +45,18 @@ export const lessonsData = [
 		img: Img2,
 		link: 'https://www.youtube.com/watch?v=r6oYSuosMfQ',
 		linkText: 'Мультфільм',
+	},
+
+	{
+		id: 4,
+		linkVideo: 'https://youtu.be/ZZ19_19eOR8',
+		posterImg: Poster1,
+		title: 'Осінь',
+		text: 'В цьому відео Анна читає книгу, вітається з дітьми і каже, що зараз осінь. Анна дуже любить робити поробки, то осінь надихнула на створення цікавої поробки. Готові спробувати?  Після відео — простий майстер-клас, який можна повторити вдома.',
+		subText:
+			"Коли закінчите поробку — надішліть фото/відео в Instagram Вашої поробки з тегом #EnglishTodayWithAnna і напишіть слово 'hedgehog'.",
+		img: Img1,
+		link: 'https://drive.google.com/file/d/19n_nvvaWoFcm1sagyJjX6-BtNoIqmhta/view?usp=drive_link',
+		linkText: 'Пісня',
 	},
 ];
