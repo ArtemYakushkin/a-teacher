@@ -1,4 +1,4 @@
-import Img0 from '../assets/lessons/Lesson0.jpg';
+import Img0 from '../assets/lessons/ABC-Lesson-0.png';
 import Img1 from '../assets/lessons/Lesson-4.1.png';
 import Img2 from '../assets/lessons/Lesson-18.png';
 import Img3 from '../assets/lessons/Lesson Весна.png';

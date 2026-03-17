@@ -48,7 +48,7 @@ const CourseABC = () => {
 		const res = await fetch('/.netlify/functions/create-payment', {
 			method: 'POST',
 			body: JSON.stringify({
-				amount: 5, // цена курса
+				amount: 490, // цена курса
 				productName: 'English Course',
 				userEmail: user.email,
 				userId: user.uid,
@@ -77,7 +77,7 @@ const CourseABC = () => {
 				disabled={hasAccess}
 				onClick={handleBuy}
 			>
-				{hasAccess ? 'Курс відкрито' : 'Відкрити курс за 390 грн.'}
+				{hasAccess ? 'Курс відкрито' : 'Відкрити курс за 490 грн.'}
 			</button>
 
 			<div className="courses-list">
