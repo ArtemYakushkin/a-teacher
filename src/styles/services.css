@@ -89,6 +89,19 @@
 	color: var(--color-blue);
 }
 
+.services-result {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: var(--color-blue);
+
+	span {
+		font-weight: 700;
+	}
+}
+
 .services-price {
 	margin-top: auto;
 	margin-bottom: 20px;

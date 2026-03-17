@@ -24,6 +24,7 @@
 @import './styles/modal.css';
 @import './styles/tabs.css';
 @import './styles/legal.css';
+@import './styles/stepper.css';
 
 *,
 ::after,

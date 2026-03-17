@@ -1,0 +1,59 @@
+.stepper-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0;
+	flex-wrap: wrap;
+	row-gap: 20px;
+}
+
+.stepper-item-container {
+	display: flex;
+	align-items: center;
+}
+
+.stepper-circle {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid var(--color-accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: var(--color-accent);
+	font-weight: bold;
+	transition: all 0.3s ease;
+	z-index: 2;
+
+	&:hover {
+		border-color: var(--color-light-grey);
+	}
+
+	&.active {
+		background-color: var(--color-accent);
+		border-color: var(--color-accent);
+		color: var(--color-light);
+		box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+	}
+}
+
+.stepper-line {
+	width: 20px; /* Длина линии между кружками */
+	height: 1px;
+	background-color: var(--color-accent);
+	margin: 0 -2px; /* Чтобы линия плотно прилегала */
+	z-index: 1;
+}
+
+@media (max-width: 480px) {
+	.stepper-line {
+		width: 10px;
+	}
+	.stepper-circle {
+		width: 30px;
+		height: 30px;
+		font-size: 12px;
+	}
+}

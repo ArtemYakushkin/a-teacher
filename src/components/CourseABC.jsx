@@ -6,8 +6,6 @@ import { useAuth } from '../firebase/AuthContext';
 
 import { FaLock } from 'react-icons/fa';
 
-// const Wayforpay = window.Wayforpay;
-
 const CourseABC = () => {
 	const [lessons, setLessons] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -44,12 +42,13 @@ const CourseABC = () => {
 	}
 
 	const hasAccess = userData?.hasCourseABC;
+	// const hasAccess = true;
 
 	const handleBuy = async () => {
 		const res = await fetch('/.netlify/functions/create-payment', {
 			method: 'POST',
 			body: JSON.stringify({
-				amount: 500, // цена курса
+				amount: 5, // цена курса
 				productName: 'English Course',
 				userEmail: user.email,
 				userId: user.uid,
@@ -78,7 +77,7 @@ const CourseABC = () => {
 				disabled={hasAccess}
 				onClick={handleBuy}
 			>
-				{hasAccess ? 'Курс відкрито' : 'Відкрити курс'}
+				{hasAccess ? 'Курс відкрито' : 'Відкрити курс за 390 грн.'}
 			</button>
 
 			<div className="courses-list">

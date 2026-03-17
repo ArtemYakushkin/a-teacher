@@ -39,7 +39,7 @@ const AuthModal = () => {
 						type="register"
 						activeView={activeView}
 						title="Ласкаво просимо назад"
-						text="Увійдіть, щоб переглянути більш розширений функціонал."
+						text={'Увійдіть, щоб переглянути\nвсі курси.'}
 						buttonText="Авторизуватися"
 						onToggle={toggleView}
 					/>
@@ -52,7 +52,7 @@ const AuthModal = () => {
 						type="login"
 						activeView={activeView}
 						title="Привіт!"
-						text="Почніть навчання за допомогою моїх курсів."
+						text={'Почніть навчання\nта оберіть курс.'}
 						buttonText="Зареєструватися"
 						onToggle={toggleView}
 					/>

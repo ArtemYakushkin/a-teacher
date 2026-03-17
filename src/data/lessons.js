@@ -1,4 +1,4 @@
-import Img0 from '../assets/lessons/ABC-Lesson-0.png';
+import Img0 from '../assets/lessons/Lesson0.jpg';
 import Img1 from '../assets/lessons/Lesson-4.1.png';
 import Img2 from '../assets/lessons/Lesson-18.png';
 import Img3 from '../assets/lessons/Lesson Весна.png';
@@ -51,7 +51,7 @@ export const lessonsData = [
 		id: 4,
 		linkVideo: 'https://youtu.be/ZZ19_19eOR8',
 		posterImg: Poster1,
-		title: 'Осінь',
+		title: 'Осіння поробка',
 		text: 'В цьому відео Анна читає книгу, вітається з дітьми і каже, що зараз осінь. Анна дуже любить робити поробки, то осінь надихнула на створення цікавої поробки. Готові спробувати?  Після відео — простий майстер-клас, який можна повторити вдома.',
 		subText:
 			"Коли закінчите поробку — надішліть фото/відео в Instagram Вашої поробки з тегом #EnglishTodayWithAnna і напишіть слово 'hedgehog'.",

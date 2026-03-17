@@ -9,7 +9,7 @@ const TextSection = ({
 	return (
 		<div className={`text ${type} ${activeView === type ? 'active' : ''}`}>
 			<h2>{title}</h2>
-			<p>{text}</p>
+			<p style={{ whiteSpace: 'pre-line' }}>{text}</p>
 			<button type="button" onClick={onToggle}>
 				{buttonText}
 			</button>
