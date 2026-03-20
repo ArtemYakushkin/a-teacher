@@ -72,6 +72,45 @@ const CourseABC = () => {
 
 	return (
 		<div>
+			<div className="course-description">
+				<h2>🎓 Курс ABC</h2>
+
+				<p style={{ whiteSpace: 'pre-line', marginBottom: '15px' }}>
+					Це початковий курс з читання для дітей 3–7 років. {'\n'}У
+					курсі 20 коротких відеоуроків (2–10 хв), словник до кожного
+					уроку, інтерактивні ігри та доступ одразу після оплати до
+					всіх уроків.
+				</p>
+
+				<p>Після курсу дитина:</p>
+
+				<div className="course-benefits">
+					<div className="course-benefit-item">
+						✔️ знає алфавіт і звуки
+					</div>
+					<div className="course-benefit-item">
+						✔️ починає читати прості слова
+					</div>
+					<div className="course-benefit-item">
+						✔️ розуміє базову лексику
+					</div>
+					<div className="course-benefit-item">
+						✔️ може відповідати на прості питання 📦
+					</div>
+				</div>
+
+				<p
+					style={{
+						fontSize: '0.9rem',
+						color: '#666',
+						fontStyle: 'italic',
+					}}
+				>
+					💡 Зручно для дітей і батьків: • 5–10 хв на день • без
+					перевантаження • у вашому темпі
+				</p>
+			</div>
+
 			<button
 				className="courses-lock-btn"
 				disabled={hasAccess}

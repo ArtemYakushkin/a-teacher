@@ -104,14 +104,19 @@ const CourseDetPage = () => {
 						<div className="courses-content">
 							<h1 className="courses-title">{lesson.title}</h1>
 							<p className="courses-text">{lesson.description}</p>
-							<a
-								href={lesson.game}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="courses-game"
-							>
-								Виконати завдання
-							</a>
+							<div className="courses-actions">
+								{lesson.game?.map((link, index) => (
+									<a
+										key={index}
+										href={link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="courses-game"
+									>
+										{lesson.actions?.[index]}
+									</a>
+								))}
+							</div>
 						</div>
 					</div>
 					<div className="courses-dictionary">
