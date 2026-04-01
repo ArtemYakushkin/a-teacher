@@ -61,7 +61,7 @@ export const servicesData = [
 			'пояснення без складної теорії',
 		],
 		result: 'Результат:',
-		resultText: 'Ви починаєш говорити, а не просто вчити',
+		resultText: 'Ви починаєте говорити, а не просто вчити',
 		price: {
 			amount: '',
 			// icon: Fire,
