@@ -25,6 +25,7 @@
 @import './styles/tabs.css';
 @import './styles/legal.css';
 @import './styles/stepper.css';
+@import './styles/courseDetails.css';
 
 *,
 ::after,
@@ -45,6 +46,14 @@ html {
 	--color-blue: #1b3b6f;
 	--color-dark: #0d1b2a;
 	--color-accent: #9000d1;
+
+	--dark-blue: #1b365d;
+	--coral: #ff7f50;
+	--teal: #2d7072;
+	--light-bg: #faf9f6;
+	--white: #ffffff;
+	--text-gray: #475569;
+	--border: #e2e8f0;
 }
 
 body {
